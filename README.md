@@ -146,3 +146,11 @@ orf-nginx-app-engine-5d9f99845-s64wm   2/2     Running   0          3m36s
 orf-nginx-app-engine-5d9f99845-shdgw   2/2     Running   0          3m40s
 ```
 
+In Tanzu Platform: 
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/out2.png)
+
+## How to get ingress to my pod 
+
+
+
