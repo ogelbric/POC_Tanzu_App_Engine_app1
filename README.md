@@ -35,7 +35,7 @@ Outcome
 ![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/mut5.png)
 
 ## Turns out the mutation policy is a good to know, but the container has to run as non-root! 
-I pulled a non root image from docker and placed it into my repo with out the pesky pull rate limit 
+I pulled a non root image from docker and placed it into my repo without the pesky pull rate limit 
 
 ```
 docker pull nginxinc/nginx-unprivileged
@@ -43,7 +43,7 @@ docker tag nginxinc/nginx-unprivileged gcr.io/boreal-rain-25xxx/nginx-unprivileg
 docker push gcr.io/boreal-rain-25xxx/nginx-unprivileged:latest
 ```
 
-## here are all the steps I used to get the image to my on-prem cluster
+## Here are all the steps I used to get the image to my on-prem cluster
 The main commands are: 
 ```
 tanzu login
