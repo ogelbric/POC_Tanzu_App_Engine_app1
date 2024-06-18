@@ -152,6 +152,35 @@ In Tanzu Platform:
 
 ## How to get ingress to my pod 
 
+Step 1: Create a file k8sGatewayRoutes.yaml in .tanzu/config
+
+```
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: HTTPRoute
+metadata:
+  name: orf-nginx-app-engine-route
+  annotations:
+    healthcheck.gslb.tanzu.vmware.com/service: orf-nginx-app-engine
+    healthcheck.gslb.tanzu.vmware.com/path: /
+    healthcheck.gslb.tanzu.vmware.com/port: "80"
+spec:
+  parentRefs:
+  - group: gateway.networking.k8s.io
+    kind: Gateway
+    name: default-gateway
+    sectionName: http-orf-nginx-app-engine #use https for TLS
+  rules:
+  - backendRefs:
+    - group: ""
+      kind: Service
+      name: orf-nginx-app-engine
+      port: 8080
+      weight: 1
+    matches:
+    - path:
+        type: PathPrefix
+        value: /
+```
 
 
 # Docs Used
