@@ -249,6 +249,8 @@ Outcome:
 
 ![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/outnet5.png)
 
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/outnet6.png)
+
 A few commands used to check things out
 
 ```
