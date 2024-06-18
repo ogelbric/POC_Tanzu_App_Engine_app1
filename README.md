@@ -49,6 +49,7 @@ The main commands are:
 tanzu login
 cd orf-nginx-app-engine
 tanzu app init
+This file: .tanzu/config/orf-nginx-app-engine.yml needs to be changed to image location!
 tanzu build config --build-plan-source-type=ucp --containerapp-registry gcr.io/boreal-rain-256712/{name}
 tanzu deploy
 ```
