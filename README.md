@@ -249,6 +249,18 @@ Outcome:
 
 ![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/outnet5.png)
 
+A few commands used to check things out
+
+```
+k get httproute -n orfspace1-5657bdb868-nb9sm 
+k get httproute -n orfspace1-5657bdb868-nb9sm orf-nginx-app-engine-route   -o yaml
+k get svc -A
+k get gateway -A
+k describe  gateway -n orfspace1-5657bdb868-nb9sm   default-gateway 
+k get httproute -A
+k describe httproute -n orfspace1-5657bdb868-nb9sm   orf-nginx-app-engine-route
+```
+
 
 
 # Docs Used
