@@ -182,7 +182,9 @@ spec:
         value: /
 ```
 
-Step 2: Create in AWS route 53 a sub domain (tanzu.gelbric.com)
+Step 2: Create in AWS route 53 a sub domain (tanzu.gelbrich.com) / create NS record in gelbrich.com
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/nsdns1.png)
 
 ![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/awssub1.png)
 
