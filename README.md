@@ -152,7 +152,7 @@ In Tanzu Platform:
 
 ## How to get ingress to my pod 
 
-Step 1: Create a file k8sGatewayRoutes.yaml in .tanzu/config (App name = orf-nginx-app-engine replace for your app name)
+Step 1: Create a file k8sGatewayRoutes.yaml in {application deployment dir}/.tanzu/config (App name = orf-nginx-app-engine replace for your app name)
 
 ```
 apiVersion: gateway.networking.k8s.io/v1beta1
@@ -182,9 +182,76 @@ spec:
         value: /
 ```
 
+Step 2: Create in AWS route 53 a sub domain (tanzu.gelbric.com)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/awssub1.png)
+
+Step 3: Create a Credential in Tanzu HUB / Stack in AWS
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/cr1.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/cr2.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/cr3.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/cr4.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/cr5.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/cr6.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/cr7.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/cr8.png)
+
+Step 4: Create a custom network profile
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/net1.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/net2.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/net3.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/net4.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/net5.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/net6.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/net7.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/net8.png)
+
+Step 5: Update Space with new network policy
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/spnet1.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/spnet2.png)
+
+ Step 6: Re-load the application
+
+ ```
+cd orf-nginx-app-engine/
+tanzu deploy
+```
+
+Outcome: 
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/outnet1.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/outnet2.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/outnet3.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/outnet4.png)
+
+![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_app1/blob/main/outnet5.png)
+
+
 
 # Docs Used
 ```
 https://docs.vmware.com/en/VMware-Tanzu-Platform/services/create-manage-apps-tanzu-platform-k8s/how-to-build-and-deploy-from-source.html
+https://docs.vmware.com/en/VMware-Tanzu-Platform/services/create-manage-apps-tanzu-platform-k8s/getting-started-create-app-envmt.html
 ```
 
