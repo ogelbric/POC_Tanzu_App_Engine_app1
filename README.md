@@ -152,7 +152,7 @@ In Tanzu Platform:
 
 ## How to get ingress to my pod 
 
-Step 1: Create a file k8sGatewayRoutes.yaml in .tanzu/config
+Step 1: Create a file k8sGatewayRoutes.yaml in .tanzu/config (App name = orf-nginx-app-engine replace for your app name)
 
 ```
 apiVersion: gateway.networking.k8s.io/v1beta1
