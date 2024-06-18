@@ -154,3 +154,8 @@ In Tanzu Platform:
 
 
 
+# Docs Used
+```
+https://docs.vmware.com/en/VMware-Tanzu-Platform/services/create-manage-apps-tanzu-platform-k8s/how-to-build-and-deploy-from-source.html
+```
+
