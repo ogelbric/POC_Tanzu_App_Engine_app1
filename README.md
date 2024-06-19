@@ -263,6 +263,30 @@ k get httproute -A
 k describe httproute -n orfspace1-5657bdb868-nb9sm   orf-nginx-app-engine-route
 ```
 
+Outcome of Capabilities in Profiles and Spaces:
+
+```
+-------------------------------------------------------------   -------------------------------------------------------------
+Cluster Group Capabilities                                    | Space Capabilities
+-------------------------------------------------------------   -------------------------------------------------------------
+bitnami.services.tanzu.vmware.com                             <
+certificates.tanzu.vmware.com                                   certificates.tanzu.vmware.com
+config-server.spring.tanzu.vmware.com                         <
+container-app.tanzu.vmware.com                                  container-app.tanzu.vmware.com
+crossplane.tanzu.vmware.com                                   <
+egress.tanzu.vmware.com                                         egress.tanzu.vmware.com
+fluxcd-helm.tanzu.vmware.com                                  <
+fluxcd-source.tanzu.vmware.com                                <
+k8sgateway.tanzu.vmware.com                                     k8sgateway.tanzu.vmware.com
+mtls.tanzu.vmware.com                                         <
+multicloud-ingress.tanzu.vmware.com                             multicloud-ingress.tanzu.vmware.com
+observability.tanzu.vmware.com                                <
+package-management.tanzu.vmware.com                             package-management.tanzu.vmware.com
+registry-pull-only-credentials-installer.tanzu.vmware.com     <
+servicebinding.tanzu.vmware.com                               <
+servicemesh-observability.tanzu.vmware.com                    <
+[root@orfdns config]# 
+```
 
 
 # Docs Used
