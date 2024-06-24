@@ -71,6 +71,8 @@ yes | tanzu context delete $org
 # see POC_Tanzu_App_Engine for this file content
 source ./tanzucli.src
 tanzu login
+tanzu project use $proj
+tanzu space use $sp 
 #
 git config --global credential.helper store
 git config --global user.name "ogelbrich"
