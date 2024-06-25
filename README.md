@@ -255,7 +255,7 @@ Outcome:
 
 Next: 
 
-![Version](https://github.com/ogelbric/POC_Tanzu_App_Engine_cluster2_app1/blob/main/README.md)
+[Second Cluster for my Space](https://github.com/ogelbric/POC_Tanzu_App_Engine_cluster2_app1/blob/main/README.md)
 
 A few commands used to check things out
 
