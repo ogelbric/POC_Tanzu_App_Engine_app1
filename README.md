@@ -114,7 +114,7 @@ cp .tanzu/config/orf-nginx-app-engine.yml /tmp/orf-nginx-app-engine.yml
 #  creationTimestamp: null                                         creationTimestamp: null
 #  name: orf-nginx-app-engine                                      name: orf-nginx-app-engine
 #spec:                                                           spec:
-#  build:                                                      |   image: gcr.io/boreal-rain-256712/nginx-unprivileged.latest
+#  build:                                                      |   image: gcr.io/boreal-rain-256712/go-hostname:latest
 #    buildpacks: {}                                            |   replicas: 4
 #    path: ../..                                               <
 #  ports:                                                          ports:
